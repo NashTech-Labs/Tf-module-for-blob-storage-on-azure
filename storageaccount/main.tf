@@ -39,10 +39,11 @@ resource "azurerm_storage_container" "containername" {
 
 resource "azurerm_storage_blob" "blobstorage" {
   name = var.blobstorage
-  resource_group_name    = azurerm_resource_group.resourcegroup.name
+ # resource_group_name    = azurerm_resource_group.resourcegroup.name
   storage_account_name   = azurerm_storage_account.storage.name
-  storage_container_name = azurerm_storage_container.containername.name
+  storage_container_name = azurerm_storage_container.containername[0].name
 
-  type = "page"
+  type = "Page"
   size = 5120
+
 }
