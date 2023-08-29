@@ -3,7 +3,7 @@ Using this techhub we can create blob storage on azure
 # Azure_blobstorage_type_Page
 Using this techhub we can create Page type blobstorage
 
-## clone the repo and use "az login" for logging your azure account
+## clone the repo and use "az login" for login your azure account
 
 ```
 terraform init
